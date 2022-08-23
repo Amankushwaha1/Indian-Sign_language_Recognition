@@ -11,7 +11,7 @@ predict = ['A','B','C','D','E','F','G','H','I','K','L','M','N','O','P','Q','R','
 def loadmodel(filepath):
 	model = tf.keras.models.load_model(filepath,custom_objects=None,compile=True)
 	return model
-	
+#	
 
 def prediction(path,model):
 	img = image.load_img(path, target_size=(150, 150))
